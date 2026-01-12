@@ -1,0 +1,31 @@
+
+{% extends 'tracker/base.html' %}
+
+{% block title %}TaskFlow — Главная{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="container hero-content">
+        <h1>Управляйте задачами команды эффективно</h1>
+        <p>
+            TaskFlow — это простая и гибкая система управления задачами
+            для работодателей и работников. Выбирайте только тот функционал,
+            который вам действительно нужен.
+        </p>
+        <a href="{% url "register" %}" class="btn btn-primary">
+            Зарегистрироваться бесплатно
+        </a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2>Гибкий функционал под ваши нужды</h2>
+        <p>
+            Выбирайте только те функции, которые действительно помогут вашей команде
+        </p>
+    </div>
+</section>
+
+{% endblock content %}

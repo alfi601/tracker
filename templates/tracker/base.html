@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'tracker/css/style.css' %}">
+
+</head>
+
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+
+        body {
+            color: #1f2937;
+            background-color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            width: 1100px;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        .header {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 16px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .logo-icon {
+            width: 28px;
+            height: 28px;
+            background-color: #2563eb;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .btn-outline {
+            border: 1px solid #2563eb;
+            color: #2563eb;
+        }
+
+        .btn-primary {
+            background-color: #2563eb;
+            color: #ffffff;
+        }
+
+        .hero {
+            background: linear-gradient(180deg, #f0f6ff 0%, #f8fbff 100%);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 16px;
+            color: #4b5563;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        .features {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        .features p {
+            color: #6b7280;
+            font-size: 15px;
+        }
+
+        main {
+            background: linear-gradient(180deg, #f0f6ff 0%, #f8fbff 100%);
+            padding: 100px;
+
+            .inputs {
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                width: 500px;
+                gap: 30px;
+                text-align: center;
+                padding: 50px;
+                border-radius: 30px;
+                box-shadow: -6px 7px 19px rgba(212, 208, 208, 0.452);
+
+                .data {
+                  
+                    display: flex;
+                    flex-direction: column;
+
+                    .input {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 5px;
+                        text-align: start;
+                    }
+
+                    label {
+                        padding: 10px;
+                    }
+
+                    input {
+                        padding: 20px;
+                        border: 1px solid rgb(128, 128, 128, 0.3);
+                        border-radius: 15px;
+                    }
+                }
+            }
+            
+        }
+        .buttons {
+
+            display: grid;
+            grid-template-columns: repeat(2, 190px);
+            gap: 10px;
+
+            button {
+
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1px solid #2563eb;
+            color: #2563eb;
+            background-color: #2563eb;
+            color: #ffffff;
+        }
+
+
+            .without-color {
+
+                    background-color: transparent;
+                    color: black;
+                    border: solid 1px gray;
+                    border-radius: 10px;
+                    padding: 12px 30px;
+            }
+        }
+
+    </style>
+
+    {% include 'companents/header.html' %}
+
+    {% block content %}
+
+    {% endblock content %}
+</body>
+
+</html>

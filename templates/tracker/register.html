@@ -1,0 +1,38 @@
+{% extends "tracker/base.html" %}
+
+{% block content %}
+
+<main>
+
+    <div class="container">
+        <div class="inputs">
+            <p>Ваши данные</p>
+            <p>Вы регистрируетесь как работник</p>
+
+            <div class="data">
+                <div class="input">
+                    <label for="">Имя</label>
+                    <input type="text" placeholder="Введите ваше имя">
+                </div>
+
+                <div class="input">
+                    <label for="">Email</label>
+                    <input type="text" placeholder="example@gmail.com">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="without-color">
+                        <a href="{% url "task_list" %}">
+                        
+                        Назад
+                    </a>
+                    </button>
+                <button>Продолжить</button>
+            </div>
+        </div>
+    </div>
+    
+</main>
+<!-- <input type="text" placeholder="Email"> -->
+{% endblock content %}

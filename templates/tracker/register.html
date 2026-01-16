@@ -5,6 +5,8 @@
 <main>
 
     <div class="container">
+        <form action="/register/" method="post">
+            {% csrf_token %}
         <div class="inputs">
             <p>Ваши данные</p>
             <p>Вы регистрируетесь как работник</p>
@@ -12,7 +14,8 @@
             <div class="data">
                 <div class="input">
                     <label for="">Имя</label>
-                    <input type="text" placeholder="Введите ваше имя">
+                    <input type="text" name="username" placeholder="Имя пользователя">
+
                 </div>
 
                 <div class="input">
@@ -22,15 +25,19 @@
             </div>
 
             <div class="buttons">
-                <button class="without-color">
+                <button type="submit" class="without-color">
                         <a href="{% url "task_list" %}">
                         
                         Назад
                     </a>
                     </button>
-                <button>Продолжить</button>
+                <button  class="without-color2">
+                        Продолжить
+                   
+                </button>
             </div>
         </div>
+    </form>
     </div>
     
 </main>

@@ -5,6 +5,6 @@ admin.site.register(Status)
 
 
 
-@admin.register(Task)
-class TaskAdmin(admin.ModelAdmin):
-    list_display = ['title', 'description', 'deadline', 'status']
+# @admin.register(Task)
+# class TaskAdmin(admin.ModelAdmin):
+#     list_display = ['title', 'description', 'deadline', 'status']

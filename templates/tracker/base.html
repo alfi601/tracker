@@ -136,7 +136,7 @@
                 box-shadow: -6px 7px 19px rgba(212, 208, 208, 0.452);
 
                 .data {
-                  
+
                     display: flex;
                     flex-direction: column;
 
@@ -158,8 +158,9 @@
                     }
                 }
             }
-            
+
         }
+
         .buttons {
 
             display: grid;
@@ -168,28 +169,159 @@
 
             button {
 
-            padding: 12px 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-            border: 1px solid #2563eb;
-            color: #2563eb;
-            background-color: #2563eb;
-            color: #ffffff;
-        }
+                padding: 12px 20px;
+                border-radius: 10px;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 500;
+                border: 1px solid #2563eb;
+                color: #2563eb;
+                background-color: #2563eb;
+                color: #ffffff;
+            }
 
 
             .without-color {
 
-                    background-color: transparent;
-                    color: black;
-                    border: solid 1px gray;
-                    border-radius: 10px;
-                    padding: 12px 30px;
+                background-color: transparent;
+                color: black;
+                border: solid 1px gray;
+                border-radius: 10px;
+                padding: 12px 30px;
             }
         }
 
+        .container1 {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .icon {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .card p {
+            margin: 0;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .blue {
+            color: #2563eb;
+        }
+
+        .green {
+            color: #16a34a;
+        }
+
+        .purple {
+            color: #9333ea;
+        }
+
+        .orange {
+            color: #f97316;
+        }
+
+        .yellow {
+            color: #eab308;
+        }
+
+        .red {
+            color: #ef4444;
+        }
+
+
+
+        .how-it-works {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .how-it-works h2 {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 40px;
+        }
+
+
+        .info-card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 30px;
+            display: flex;
+            gap: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+            align-items: flex-start;
+            width: 680px;
+        }
+
+        .info-icon {
+            background-color: #dcfce7;
+            color: #16a34a;
+            font-size: 28px;
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .info-content h3 {
+            margin: 0 0 15px;
+            font-size: 20px;
+        }
+
+
+        .info-content ul {
+            padding-left: 0;
+            margin: 0;
+
+
+        }
+
+
+        .info-content li {
+            list-style: none;
+            margin-bottom: 10px;
+            padding-left: 28px;
+            position: relative;
+            color: rgb(81, 81, 81);
+            font-size: 25px;
+            line-height: 60px;
+
+        }
+
+
+        .info-content li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #16a34a;
+        }
     </style>
 
     {% include 'companents/header.html' %}
